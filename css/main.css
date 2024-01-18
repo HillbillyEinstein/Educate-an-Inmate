@@ -1,0 +1,106 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* BACKGROUND COLORS */
+/* nav bar */
+.navBarGradient{
+    background:white;
+    background: -webkit-linear-gradient(to right, black 25%, rgb(245, 105, 15));
+    background:     -moz-linear-gradient(to right, black 25%, rgb(245, 105, 15));
+    background:         linear-gradient(to right, black 25%, rgb(245, 105, 15));
+}
+/* footer is opposite of nav bar */
+.footerGradient{
+    background:white;
+    background: -webkit-linear-gradient(to right,  rgb(245, 105, 15), black 25%);
+    background:     -moz-linear-gradient(to right,  rgb(245, 105, 15), black 25%);
+    background:         linear-gradient(to right,  rgb(245, 105, 15), black 25%);
+}
+.backgroundColor1{
+    background-color:rgb(245, 105, 15);
+}
+.backgroundColor2{
+    background-color: white;
+}
+.backgroundColor3{
+    background-color: black;
+}
+
+/* FONT COLORS */
+.textColor1{
+    color: rgb(245, 105, 15);
+}
+.textColor2{
+    color: black;
+}
+
+/* SHADOWS */
+.text-shadow{
+    text-shadow: 1px 1px 2px black;
+}
+.text-shadow2{
+    text-shadow: grey 3px 7px 7px;
+}
+.box-shadow1{
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+}
+.box-shadow2{
+    box-shadow: 4px 4px 10px grey;
+}
+
+/* HEADER */
+.logo{
+    border-radius: 35%;
+    height: 61px;
+    width: 75px;
+    image-rendering: pixelated;
+}
+
+/* ABOUT PAGE */
+#aboutBackgroundImage{
+    background-image: url(../images/backgroundAbout.jpg);
+}
+/* used for sponsor page too */
+.backgroundImagePlacement{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+/* used for links */
+.underline{
+    text-decoration: underline;
+}
+
+/* SPONSOR PAGE */
+#sponsorBackgroundImage{
+    background-image: url(../images/markers.png);
+}
+
+/* DONATE PAGE */
+/* form confirmation */
+.hide{
+    display: none;
+}
+
+/* SPONSOR PAGE */ 
+/* for carousel images */
+.carouselImage{
+    max-height: 750px;
+    border: 1px solid black;
+    image-rendering: auto;
+}
+/* boostrap font size will not work */
+#becomeASponsor{
+    font-size: 30px;
+}
+
+/* HOVERS */
+#becomeASponsor:hover, .logo:hover, #submitBtn:hover{
+    border: 1.5px dashed white;
+}
+a:hover{
+    color:white;
+}

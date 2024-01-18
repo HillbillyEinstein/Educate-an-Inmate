@@ -1,0 +1,40 @@
+/* flip container */
+.flip{
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    margin: 5% auto;
+    perspective: 1000px; /* 3d effect */
+}
+/* next container is needed to position the front and back */
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* hover */
+.flip:hover .inner{
+    transform: rotateY(180deg);
+} 
+/* position the front and back sides text */
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color:rgb(245, 105, 15);
+    border: 1px solid black;
+}
+/* style the back side */
+.back{
+    color: white;
+    transform: rotateY(180deg);
+    font-weight: 900;
+}
+/* style the <h3> */
+.questionAnswer{
+    margin: 2%;
+}
